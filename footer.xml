@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="footer-container">
+  <div class="footer-section">
+    <h3>О нас</h3>
+    <p>Наше туристическое агентство предоставляет уникальные возможности для оформления лучшего отдыха.</p>
+  </div>
+  <div class="footer-section">
+    <h3>Контакты</h3>
+    <ul>
+      <li>Телефон: +375-29-684-62-55</li>
+      <li>Email: radyuk.ivan@gmail.com</li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h3>Полезные ссылки</h3>
+    <ul class="useful-links">
+      <li><a href="#">Помощь</a></li>
+      <li><a href="#">Правила использования</a></li>
+      <li><a href="#">Конфиденциальность</a></li>
+      <li><a href="#">Условия использования</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h3>Наши соцсети</h3>
+    <div class="social-nets">
+      <div><a target="_blank" href=""><img src="..//social_networks/vk.svg" alt="vk" /></a></div>
+      <div><a target="_blank" href=""><img src="../social_networks/github.svg" alt="github" /></a></div>
+            <div><a target="_blank" href=""><img src="../social_networks/youtube.svg" alt="youtube" /></a></div>
+      <div><a target="_blank" href=""><img src="../social_networks/facebook.svg" alt="facebook" /></a></div>
+    </div>
+  </div>
+</div>

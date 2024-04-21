@@ -1,8 +1,14 @@
+body
+{
+    background-color: rgb(228, 222, 215);
+    margin: 0;
+    padding: 0;
+}
 .net 
 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 10% 35% 10% 35% 10%;
+    grid-template-rows: 10% 35% 10% 35% 110%;
     grid-gap: 10px;
     width: 100%;
     height: 100%;
@@ -16,26 +22,33 @@
 .box1
 {
     grid-area: button1;
+    font-weight: 700;
+    
 }
 .box2
 {
     grid-area: button2;
+    font-weight: 700;
 }
 .box3
 {
     grid-area: button3;
+    font-weight: 700;
 }
 .box4
 {
     grid-area: button4;
+    font-weight: 700;
 }
 .box5
 {
     grid-area: button5;
+    font-weight: 700;
 }
 .box6
 {
     grid-area: button6;
+    font-weight: 700;
 }
 .area1
 {
@@ -55,4 +68,13 @@
 .footer
 {
     grid-area: footer;
+}
+li {
+    list-style-type: none;
+}
+@media screen and (max-width: 980px)
+{
+    .net{
+        height: 35%;
+    }
 }

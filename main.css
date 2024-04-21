@@ -38,37 +38,33 @@ body
 }
 .box1
 {
-    background-color: #e8e7e7;
+    font-weight: 700;
     grid-area: button1;
 }
 .box2
 {
-    background-color: #e8e7e7;
+    font-weight: 700;
     grid-area: button2;
 }
 .box3
 {
-    background-color: #e8e7e7;
+    font-weight: 700;
     grid-area: button3;
 }
 .box4
 {
-    background-color: #e8e7e7;
+    font-weight: 700;
     grid-area: button4;
 }
 .box5
 {
-    background-color: #e8e7e7;
+    font-weight: 700;
     grid-area: button5;
 }
 .box6
 {
-    background-color: #e8e7e7;
+    font-weight: 700;
     grid-area: button6;
-}
-.box6:hover
-{
-    font-size: 40px;
 }
 .main
 {
@@ -87,4 +83,13 @@ a {
 {
 font-size: 28px;
 text-align: center;
+}
+li {
+    list-style-type: none;
+}
+@media screen and (max-width: 980px)
+{
+    .grid{
+        height: 40%;
+    }
 }

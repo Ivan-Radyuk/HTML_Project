@@ -7,7 +7,7 @@ body
     margin: 0;
     padding: 0;
 }
-.grid 
+.net 
 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -19,6 +19,36 @@ body
     'button1 button2 button3 button4 button5 button6' 
     'not1 not1 reg reg not2 not2'
     'footer footer footer footer footer footer'
+}
+.box1
+{
+    grid-area: button1;
+    font-weight: 700;
+}
+.box2
+{
+    grid-area: button2;
+    font-weight: 700;
+}
+.box3
+{
+    grid-area: button3;
+    font-weight: 700;
+}
+.box4
+{
+    grid-area: button4;
+    font-weight: 700;
+}
+.box5
+{
+    grid-area: button5;
+    font-weight: 700;
+}
+.box6
+{
+    grid-area: button6;
+    font-weight: 700;
 }
 .not1{
     grid-area: not1;
@@ -87,4 +117,13 @@ input[type="button"]
 }
 a {
     text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+@media screen and (max-width: 980px)
+{
+    .net{
+        height: 50%;
+    }
 }
