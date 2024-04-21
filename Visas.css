@@ -1,0 +1,128 @@
+.net 
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10% 27% 26% 27% 10%;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+    'button1 button2 button3 button4 button5 button6' 
+    'net1 net1 net2 net2 net3 net3'
+    'net4 net4 net5 net5 net6 net6'
+    'net7 net7 net8 net8 net9 net9'
+    'footer footer footer footer footer footer'
+}
+.box1
+{
+    grid-area: button1;
+}
+.box2
+{
+    grid-area: button2;
+}
+.box3
+{
+    grid-area: button3;
+}
+.box4
+{
+    grid-area: button4;
+}
+.box5
+{
+    grid-area: button5;
+}
+.box6
+{
+    grid-area: button6;
+}
+.area1
+{
+    grid-area: net1;
+    background-image: url(./images/Spain.png);
+    background-position: center;
+}
+.area2
+{
+    grid-area: net2;
+    background-image: url(./images/Geramany.png);
+    background-position: center;
+}
+.area3
+{
+    grid-area: net3;
+    background-image: url(./images/France.png);
+    background-position: center;
+}
+.area4
+{
+    grid-area: net4;
+    background-image: url(./images/Italy.png);
+    background-position: center;
+}
+.area5
+{
+    grid-area: net5;
+    background-image: url(./images/Belgium.png);
+    background-position: center;
+}
+.area6
+{
+    grid-area: net6;
+    background-image: url(./images/Swederland.png);
+    background-position: center;
+}
+.area7
+{
+    grid-area: net7;
+    background-image: url(./images/Russia.png);
+    background-position: center;
+}
+.area8
+{
+    grid-area: net8;
+    background-image: url(./images/Turkey.png);
+    background-position: center;
+}
+.area9
+{
+    grid-area: net9;
+    background-image: url(./images/Bolgaria.png);
+    background-position: center;
+}
+.area10
+{
+    grid-area: footer;
+}
+.all-buttons2
+{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    font-size: 28px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+.all-buttons2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Поместите псевдоэлемент за кнопкой */
+    box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0); /* Начните с нулевой прозрачности */
+    transition: box-shadow 0.3s ease;
+}
+.all-buttons2:hover::before {
+    box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.5);
+}
+.all-buttons2:hover {
+    transform: scale(1.1);
+    font-size: 34px; /* Размер текста увеличивается */
+    z-index: 1; /* Поместите кнопку поверх псевдоэлемента */
+    color: aliceblue;
+}

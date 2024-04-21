@@ -1,0 +1,154 @@
+body
+{
+    background-color: rgb(228, 222, 215);
+    margin: 0;
+    padding: 0;
+}
+.net 
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10% 25% 10% 25% 10%;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+    'button1 button2 button3 button4 button5 button6' 
+    'net net01 net00 net00 net02 net-'
+    'net net1 net00 net00 net2 net-'
+    'net net03 net00 net00 net04 net-'
+    'net net3 net00 net00 net4 net-'
+    'footer footer footer footer footer footer'
+}
+.all-buttons
+{
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 20px;
+    background: none;
+    transition: background-color 0.7s ease;
+}
+.all-buttons:hover
+{
+    background-color: rgb(0, 0, 0);
+    font-size: 34px;
+    color: azure;
+}
+.button1
+{
+    background-color: #e8e7e7;
+    grid-area: button1;
+}
+.button2
+{
+    background-color: #e8e7e7;
+    grid-area: button2;
+}
+.button3
+{
+    background-color: #e8e7e7;
+    grid-area: button3;
+}
+.button4
+{
+    background-color: #e8e7e7;
+    grid-area: button4;
+}
+.button5
+{
+    background-color: #e8e7e7;
+    grid-area: button5;
+}
+.button6
+{
+    background-color: #e8e7e7;
+    grid-area: button6;
+}
+.area1
+{
+    grid-area: net1;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 28px;
+    
+}
+.area01
+{
+    grid-area: net01;
+    text-align: center;
+    font-size: 28px;
+    background: url(./images/person.png);
+}
+.area2
+{
+    grid-area: net2;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 28px;
+}
+.area02
+{
+    grid-area: net02;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 28px;
+    background: url(./images/person.png);
+    
+}
+.area3
+{
+    grid-area: net3;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 28px;
+}
+.area03
+{
+    grid-area: net03;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 28px;
+    background: url(./images/woman.png);
+    
+}
+.area4
+{
+    grid-area: net4;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 28px;
+}
+.area04
+{
+    grid-area: net04;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 28px;
+    background: url(./images/person.png);
+    
+}
+.area00
+{
+    grid-area: net00;
+}
+.footer
+{
+    font-size: 26px;
+    grid-area: footer;
+    text-align: center;
+}
+.a{
+    text-decoration: none;
+}
+input[type="button"] 
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #000000;
+    background-color: cornflowerblue;
+    font-size: 16px;
+    cursor: pointer;
+}
