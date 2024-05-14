@@ -21,6 +21,16 @@ body
     'main main main main main main'
     'footer footer footer footer footer footer'
 }
+.burger-icon{
+    display: none;
+}
+.menu {
+    display: none; /* Начальное состояние: меню скрыто */
+}
+
+.menu.show {
+    display: block; /* Показать меню при наличии класса .show */
+}
 .all-buttons
 {
     border: none;
@@ -90,6 +100,29 @@ li {
 @media screen and (max-width: 980px)
 {
     .grid{
-        height: 40%;
+        height: 70%;
+    }
+    .box1,.box2,.box3,.box4,.box5,.box6
+    {
+        display: none;
+    }
+    .burger-icon{
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 700;
+        border: none;
+        background: none;
+    }
+    
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    a {
+        color: inherit; /* Наследуем цвет текста от родительского элемента */
     }
 }
