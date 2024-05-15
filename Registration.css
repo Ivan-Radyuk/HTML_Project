@@ -20,6 +20,16 @@ body
     'not1 not1 reg reg not2 not2'
     'footer footer footer footer footer footer'
 }
+.burger-icon{
+    display: none;
+}
+.menu {
+    display: none; /* Начальное состояние: меню скрыто */
+}
+
+.menu.show {
+    display: block; /* Показать меню при наличии класса .show */
+}
 .box1
 {
     grid-area: button1;
@@ -125,5 +135,37 @@ li {
 {
     .net{
         height: 50%;
+    }
+    .box1,.box2,.box3,.box4,.box5,.box6
+    {
+        display: none;
+    }
+    .burger-icon{
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 700;
+        border: none;
+        background: none;
+    }
+    
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    input[type="button"] 
+    {
+        font-size: 24px;
+    }
+    input[type="email"] 
+    {
+        font-size: 24px;
+    }
+    input[type="password"] 
+    {
+        font-size: 24px;
     }
 }

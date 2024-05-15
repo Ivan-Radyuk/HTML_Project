@@ -5,6 +5,17 @@
         <link type="text/css" href="Registration.css" rel="stylesheet">
     </head>
     <body>
+        <button class="burger-icon"> &#9776; </button>
+      <div class="menu">
+        <ul>
+          <li><a href="/Project.html">Главная</a></li>
+          <li><a href="/Tours.html">Туры</a></li>
+          <li><a href="/Visas.html">Визы</a></li>
+          <li><a href="/Specialists.html">Связь с нами</a></li>
+          <li><a href="/Phones.html">Контакты</a></li>
+          <li><a href="/Registration.html">Регистрация</a></li>
+      </ul>
+      </div>
         <div class="net">
         <button class="box1 all-buttons" onclick="window.location.href='/Project.html'"> Главная </button>
         <button class="box2 all-buttons" onclick="window.location.href='/Tours.html'"> Туры </button>
@@ -16,9 +27,15 @@
                     <p> Регистрация </p>
                     <input type="email" name="email" placeholder="Введите ваш Email" required>
                     <input type="password" name="password" placeholder="Пароль" required>
-                    <input type="button" name="acess" value="Зарегистрироваться" required>
+                    <input type="button" id="acess" value="Зарегистрироваться" required>
                         <p style="font-size: 22px;">Есть аккаунт? <a href="#"> Войти</a> </p>
                 </form>
         </div>
+        <script>
+            document.getElementById('acess').addEventListener('click', function(event) {
+                alert('Регистрация успешна!');
+            });
+        </script>
+        <script type="text/javascript" src="burger.js"></script>
     </body>
 </html>

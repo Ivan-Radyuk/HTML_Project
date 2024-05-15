@@ -6,6 +6,17 @@
         <link type="text/css" href="footer.css" rel="stylesheet">
     </head>
     <body>
+        <button class="burger-icon"> &#9776; </button>
+      <div class="menu">
+        <ul>
+          <li><a href="/Project.html">Главная</a></li>
+          <li><a href="/Tours.html">Туры</a></li>
+          <li><a href="/Visas.html">Визы</a></li>
+          <li><a href="/Specialists.html">Связь с нами</a></li>
+          <li><a href="/Phones.html">Контакты</a></li>
+          <li><a href="/Registration.html">Регистрация</a></li>
+      </ul>
+      </div>
         <div class="net">
         <button class="button1 all-buttons" onclick="window.location.href='/Project.html'"> Главная </button>
         <button class="button2 all-buttons" onclick="window.location.href='/Tours.html'"> Туры </button>
@@ -13,36 +24,55 @@
         <button class="button4 all-buttons" onclick="window.location.href='/Specialists.html'"> Специалисты </button>
         <button class="button5 all-buttons" onclick="window.location.href='/Phones.html'"> Телефоны </button>
         <button class="button6 all-buttons" onclick="window.location.href='/Registration.html'"> Регистрация </button>
-        <div class="area01">  </div>
+        <div class="area01"></div>
         <div class="area1"> 
-            Михаил
-            <input type="button" name="Help" value="Помощь" required> 
+           <b> Михаил </b>
+            <p> Поможет подобрать путёвку </p>
+            <input type="button" id="Help" value="Помощь" required> 
         </div>
-        <div class="area02">    
-        </div>
+        <div class="area02"></div>
         <div class="area2">  
-            
-            Виталий 
-            <input type="button" name="Help" value="Помощь" required> 
+            <b> Виталий </b>
+            <p> Поможет с оформлением визы <p>
+            <input type="button" id="Help1" value="Помощь" required> 
         </div>
-
-        <div class="area00">  </div>
-
-        <div class="area03">  </div>
+        <div class="area03"></div>
         <div class="area3"> 
-            
-            Жанна
-            <input type="button" name="Help" value="Помощь" required> 
+            <b> Пётр </b>
+            <p> Расскажет что-нибудь интересное <p>
+            <input type="button" id="Help2" value="Помощь" required> 
         </div>
-        <div class="area04">  </div>
+        <div class="area04"></div>
         <div class="area4"> 
-            Владимир 
-            <input type="button" name="Help" value="Помощь" required>
+            <b> Иван </b>
+            <p> Админ сайта, окажет тех. помощь </p> 
+            <input type="button" id="Help3" value="Помощь" required>
         </div>
-        <script type="text/javascript" src="footer.js"></script>
         <footer class="footer">
             <div class="footer-container"></div>
           </footer>
         </div>
+        <script>
+            document.getElementById('Help').addEventListener('click', function(event) {
+                alert('Ожидайте, специалист свяжется с Вами в ближайшее время!');
+            });
+        </script>
+         <script>
+            document.getElementById('Help1').addEventListener('click', function(event) {
+                alert('Ожидайте, специалист свяжется с Вами в ближайшее время!');
+            });
+        </script>
+         <script>
+            document.getElementById('Help2').addEventListener('click', function(event) {
+                alert('Ожидайте, специалист свяжется с Вами в ближайшее время!');
+            });
+        </script>
+         <script>
+            document.getElementById('Help3').addEventListener('click', function(event) {
+                alert('Ожидайте, специалист свяжется с Вами в ближайшее время!');
+            });
+        </script>
+        <script type="text/javascript" src="footer.js"></script>
+        <script type="text/javascript" src="burger.js"></script>
     </body>
 </html>

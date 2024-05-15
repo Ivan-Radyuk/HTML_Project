@@ -1,0 +1,172 @@
+body
+{
+    background-color: rgb(228, 222, 215);
+    margin: 0;
+    padding: 0;
+}
+.net 
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10% 48% 48% 48% 110%;
+    grid-gap: 12em;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+    'button1 button2 button3 button4 button5 button6' 
+    'area1 area1 area1 area1 area1 area1'
+    'area2 area2 area2 area2 area2 area2'
+    'area3 area3 area3 area3 area3 area3'
+    'footer footer footer footer footer footer'
+}
+.burger-icon{
+    display: none;
+}
+.menu {
+    display: none; /* Начальное состояние: меню скрыто */
+}
+
+.menu.show {
+    display: block; /* Показать меню при наличии класса .show */
+}
+.all-buttons
+{
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 20px;
+    background: none;
+    transition: background-color 0.7s ease;
+    margin-bottom: 20px;
+}
+.all-buttons:hover
+{
+    background-color: rgb(0, 0, 0);
+    font-size: 34px;
+    color: azure;
+}
+.box1
+{
+    grid-area: button1;
+    font-weight: 700;
+}
+.box2
+{
+    grid-area: button2;
+    font-weight: 700;
+}
+.box3
+{
+    grid-area: button3;
+    font-weight: 700;
+}
+.box4
+{
+    grid-area: button4;
+    font-weight: 700;
+}
+.box5
+{
+    grid-area: button5;
+    font-weight: 700;
+}
+.box6
+{
+    grid-area: button6;
+    font-weight: 700;
+}
+.area1{
+    grid-area: area1;
+    background-color: gainsboro;
+}
+.area2{
+    grid-area: area2;
+    background-color: gainsboro;
+}
+.area3{
+    grid-area: area3;
+    background-color: gainsboro;
+}
+.area1 img
+{
+    display: inline-block;
+    width: 30%; /* Чтобы изображения занимали примерно треть доступной ширины */
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.area2 img
+{
+    display: inline-block;
+    width: 30%; /* Чтобы изображения занимали примерно треть доступной ширины */
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.area3 img
+{
+    display: inline-block;
+    width: 30%; /* Чтобы изображения занимали примерно треть доступной ширины */
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer
+{
+    font-size: 26px;
+    grid-area: footer;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+input[type="button"] 
+{
+    width: 10%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #000000;
+    background-color: cornflowerblue;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media screen and (max-width: 980px)
+{
+    .net
+    {
+        height: 50%;
+    }
+    .box1,.box2,.box3,.box4,.box5,.box6
+    {
+        display: none;
+    }
+    .burger-icon{
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 700;
+        border: none;
+        background: none;
+    }
+    
+    .menu li 
+    {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    p
+    {
+        font-size: x-large;
+    }
+    .area1, .area2, .area3
+    {
+    height: 128%;
+    }
+}

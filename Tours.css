@@ -202,4 +202,11 @@ li {
     a {
         color: inherit; /* Наследуем цвет текста от родительского элемента */
     }
+    .all-buttons2{
+        font-size: 50px;
+        font-weight: 700;
+        font-size: 34px;
+        color: azure;
+        box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.5);
+    }
 }
