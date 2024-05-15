@@ -35,3 +35,9 @@
 {
     background: #0056b3;
 }
+@media screen and (max-width: 980px)
+{
+    .subscribe-form{
+        font-size: 40px;
+    }
+}

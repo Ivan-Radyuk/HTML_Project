@@ -20,6 +20,16 @@ body
     'footer footer footer footer footer footer'
     
 }
+.burger-icon{
+    display: none;
+}
+.menu {
+    display: none; /* Начальное состояние: меню скрыто */
+}
+
+.menu.show {
+    display: block; /* Показать меню при наличии класса .show */
+}
 .box1
 {
     grid-area: button1;
@@ -145,6 +155,33 @@ li {
 @media screen and (max-width: 980px)
 {
     .net{
-        height: 35%;
+        height: 75%;
     }
+    .box1,.box2,.box3,.box4,.box5,.box6
+    {
+        display: none;
+    }
+    .burger-icon{
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 700;
+        border: none;
+        background: none;
+    }
+    
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    a {
+        color: inherit; /* Наследуем цвет текста от родительского элемента */
+    }
+    .all-buttons2{
+    box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+}
 }

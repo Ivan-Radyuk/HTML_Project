@@ -125,4 +125,10 @@ li {
     a {
         color: inherit; /* Наследуем цвет текста от родительского элемента */
     }
+    .info{
+        font-size: 50px;
+    }
+    input{
+        font-size: 25px;
+    }
 }

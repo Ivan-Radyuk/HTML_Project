@@ -49,8 +49,8 @@
               </div> 
               <div class="subscribe-form"> 
                 <h2> Подпишитесь на нашу рассылку </h2> 
-                <form> 
-                    <input type="email" name="email" placeholder="Введите ваш Email" required> 
+                <form id="form"> 
+                    <input type="email" id="email" placeholder="Введите ваш Email" required> 
                     <input type="submit" value="Подписаться"> 
                 </form>
             </div>
@@ -59,6 +59,17 @@
           <div class="footer-container"></div>
         </footer>
     </div>
+    <script>
+      document.getElementById('form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Отменяем стандартное поведение формы
+            var emailInput = document.getElementById('email');
+            
+            // Очищаем значения полей
+            emailInput.value = '';
+          // Показываем всплывающее окно с сообщением
+          alert('Спасибо за подписку!');
+      });
+  </script>
     <script type="text/javascript" src="slider.js"> </script> 
         <script type="text/javascript" src="footer.js"></script>
         <script type="text/javascript" src="burger.js"></script>

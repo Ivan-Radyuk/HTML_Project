@@ -8,16 +8,26 @@ body
 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 10% 25% 10% 25% 10%;
+    grid-template-rows: 10% 35% 15% 35% 15%;
     width: 100%;
     height: 100%;
     grid-template-areas:
     'button1 button2 button3 button4 button5 button6' 
-    'net net01 net00 net00 net02 net-'
-    'net net1 net00 net00 net2 net-'
-    'net net03 net00 net00 net04 net-'
-    'net net3 net00 net00 net4 net-'
+    'net01 net01 net00 net00 net02 net02'
+    'net1 net1 net00 net00 net2 net2'
+    'net03 net03 net00 net00 net04 net04'
+    'net3 net3 net00 net00 net4 net4'
     'footer footer footer footer footer footer'
+}
+.burger-icon{
+    display: none;
+}
+.menu {
+    display: none; /* Начальное состояние: меню скрыто */
+}
+
+.menu.show {
+    display: block; /* Показать меню при наличии класса .show */
 }
 .all-buttons
 {
@@ -27,6 +37,7 @@ body
     border-radius: 20px;
     background: none;
     transition: background-color 0.7s ease;
+    margin-bottom: 20px;
 }
 .all-buttons:hover
 {
@@ -70,6 +81,7 @@ body
     background-color: #ccc;
     text-align: center;
     font-size: 28px;
+    margin-left: 10px;
     
 }
 .area01
@@ -77,7 +89,11 @@ body
     grid-area: net01;
     text-align: center;
     font-size: 28px;
-    background: url(./images/person.png);
+    background: url(./images/Worker.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
 }
 .area2
 {
@@ -85,6 +101,7 @@ body
     background-color: #ccc;
     text-align: center;
     font-size: 28px;
+    margin-right: 10px;
 }
 .area02
 {
@@ -92,7 +109,12 @@ body
     background-color: #ccc;
     text-align: center;
     font-size: 28px;
-    background: url(./images/person.png);
+    background: url(./images/Worker2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    align-items: center;
     
 }
 .area3
@@ -101,6 +123,7 @@ body
     background-color: #ccc;
     text-align: center;
     font-size: 28px;
+    margin-left: 10px;
 }
 .area03
 {
@@ -108,7 +131,11 @@ body
     background-color: #ccc;
     text-align: center;
     font-size: 28px;
-    background: url(./images/woman.png);
+    background: url(./images/Worker3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
     
 }
 .area4
@@ -117,6 +144,7 @@ body
     background-color: #ccc;
     text-align: center;
     font-size: 28px;
+    margin-right: 10px;
 }
 .area04
 {
@@ -124,7 +152,11 @@ body
     background-color: #ccc;
     text-align: center;
     font-size: 28px;
-    background: url(./images/person.png);
+    background: url(./images/Leader.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
     
 }
 .area00
@@ -156,7 +188,33 @@ li {
 }
 @media screen and (max-width: 980px)
 {
-    .net{
-        height: 34%;
+    .button1,.button2,.button3,.button4,.button5,.button6
+    {
+        display: none;
+    }
+    .burger-icon{
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 700;
+        border: none;
+        background: none;
+    }
+    
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    a {
+        color: inherit; /* Наследуем цвет текста от родительского элемента */
+    }
+    .area1, .area2, .area3, .area4{
+        font-size: 50px;
+    }
+    input[type="button"] {
+        font-size: 50px;
     }
 }
