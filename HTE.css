@@ -3,6 +3,7 @@ body
     background-color: rgb(228, 222, 215);
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', sans-serif;
 }
 .net 
 {
@@ -119,13 +120,14 @@ body
     font-size: 26px;
     grid-area: footer;
     text-align: center;
+    height: 20%;
 }
 p{
     font-size: 20px;
 }
 input[type="button"] 
 {
-    width: 10%;
+    width: 15%;
     padding: 10px;
     border: none;
     border-radius: 3px;
@@ -134,11 +136,17 @@ input[type="button"]
     font-size: 24px;
     cursor: pointer;
 }
+a {
+    text-decoration: none;
+}
 @media screen and (max-width: 980px)
 {
     .net
     {
-        height: 50%;
+        height: 200%;
+    }
+    .footer{
+        height: 40%;
     }
     .box1,.box2,.box3,.box4,.box5,.box6
     {
@@ -146,7 +154,7 @@ input[type="button"]
     }
     .burger-icon{
         display: block;
-        width: 100%;
+        width: 200%;
         font-size: 50px;
         font-weight: 700;
         border: none;
@@ -160,6 +168,7 @@ input[type="button"]
         font-size: 50px;
         font-weight: 700;
         text-align: center;
+        width: 200%;
     }
     p
     {
@@ -167,6 +176,9 @@ input[type="button"]
     }
     .area1, .area2, .area3
     {
-    height: 128%;
+    height: 100%;
+    }
+    a {
+        color: inherit;
     }
 }
