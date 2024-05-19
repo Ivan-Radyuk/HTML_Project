@@ -1,8 +1,11 @@
 <Doctype html>
-    <html>
+<html lаng="en">
     <head>
         <meta charset = "uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" href="Registration.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <title> Регистрация </title>
     </head>
     <body>
         <button class="burger-icon"> &#9776; </button>
@@ -23,6 +26,7 @@
         <button class="box4 all-buttons" onclick="window.location.href='/Specialists.html'"> Специалисты </button>
         <button class="box5 all-buttons" onclick="window.location.href='/Phones.html'"> Телефоны </button>
         <button class="box6 all-buttons" onclick="window.location.href='/Registration.html'"> Регистрация </button>
+        <div class="not1"> </div>
                 <form class="reg">
                     <p> Регистрация </p>
                     <input type="email" name="email" placeholder="Введите ваш Email" required>
@@ -30,6 +34,7 @@
                     <input type="button" id="acess" value="Зарегистрироваться" required>
                         <p style="font-size: 22px;">Есть аккаунт? <a href="#"> Войти</a> </p>
                 </form>
+        <div class="not2"> </div>
         </div>
         <script>
             document.getElementById('acess').addEventListener('click', function(event) {

@@ -3,6 +3,7 @@ body
     background-color: rgb(228, 222, 215);
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', sans-serif;
 }
 .net 
 {
@@ -90,7 +91,7 @@ body
 .area1 img
 {
     display: inline-block;
-    width: 30%; /* Чтобы изображения занимали примерно треть доступной ширины */
+    width: 33%; /* Чтобы изображения занимали примерно треть доступной ширины */
     height: 50%;
     background-position: center;
     background-size: cover;
@@ -99,7 +100,7 @@ body
 .area2 img
 {
     display: inline-block;
-    width: 30%; /* Чтобы изображения занимали примерно треть доступной ширины */
+    width: 33%; /* Чтобы изображения занимали примерно треть доступной ширины */
     height: 50%;
     background-position: center;
     background-size: cover;
@@ -108,7 +109,7 @@ body
 .area3 img
 {
     display: inline-block;
-    width: 30%; /* Чтобы изображения занимали примерно треть доступной ширины */
+    width: 33%; /* Чтобы изображения занимали примерно треть доступной ширины */
     height: 50%;
     background-position: center;
     background-size: cover;
@@ -119,13 +120,14 @@ body
     font-size: 26px;
     grid-area: footer;
     text-align: center;
+    height: 20%;
 }
 p{
     font-size: 20px;
 }
 input[type="button"] 
 {
-    width: 10%;
+    width: 20%;
     padding: 10px;
     border: none;
     border-radius: 3px;
@@ -134,11 +136,14 @@ input[type="button"]
     font-size: 24px;
     cursor: pointer;
 }
+a {
+    text-decoration: none;
+}
 @media screen and (max-width: 980px)
 {
     .net
     {
-        height: 50%;
+        height: 220%;
     }
     .box1,.box2,.box3,.box4,.box5,.box6
     {
@@ -146,20 +151,20 @@ input[type="button"]
     }
     .burger-icon{
         display: block;
-        width: 100%;
+        width: 200%;
         font-size: 50px;
         font-weight: 700;
         border: none;
         background: none;
     }
     
-    .menu li 
-    {
+    .menu li {
         display: block;
         margin-bottom: 10px;
         font-size: 50px;
         font-weight: 700;
         text-align: center;
+        width: 200%;
     }
     p
     {
@@ -167,6 +172,14 @@ input[type="button"]
     }
     .area1, .area2, .area3
     {
-    height: 128%;
+    height: 100%;
+    width: 90%;
+    }
+    a {
+        color: inherit;
+    }
+    .footer{
+        height: 50%;
+        width: 86%;
     }
 }
